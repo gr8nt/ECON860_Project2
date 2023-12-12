@@ -39,7 +39,8 @@
 
 # (6) run_logistic_regression_with_test.py
   Supervised learning model for logistic regression with R-Squared Score
-  **this is not applicable to the continuous dataset, only included to show attempt
+  
+  **this is not suited for the continuous dataset, only included to show attempt
 
 
 # More detal in final.pdf
