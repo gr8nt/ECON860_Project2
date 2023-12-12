@@ -47,11 +47,3 @@ for train_index, test_index in kfold_object.split(data):
 
 
 
-
-
-
-
-
-
-
-
