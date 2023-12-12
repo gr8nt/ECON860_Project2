@@ -47,6 +47,9 @@ machine.fit(dataset)
 factor_loadings = machine.loadings_
 print(factor_loadings)
 
+# save factor loadings data to use in determining which 20 questions should be used in assembling a team
+pandas.DataFrame(factor_loadings).to_csv("csv_files/factor_loadings.csv", index=False)
+
 dataset = dataset.values
 
 results = numpy.dot(dataset, factor_loadings)
@@ -56,7 +59,6 @@ if not os.path.exists('csv_files'):
   os.mkdir('csv_files')
 # could round results.. not knowing the context of original dataset, I prefer to use decimals for greater precision
 pandas.DataFrame(results).to_csv("csv_files/traits.csv", index=False)
-
 
 
 
