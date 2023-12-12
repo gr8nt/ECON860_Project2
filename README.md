@@ -34,11 +34,11 @@
 
 
 # (5) run_linear_regression_with_test.py
-  supervised learning model for linear regression with R-Squared Score
+  Supervised learning model for linear regression with R-Squared Score
 
 
 # (6) run_logistic_regression_with_test.py
-  supervised learning model for logistic regression with R-Squared Score
+  Supervised learning model for logistic regression with R-Squared Score
   **this is not applicable to the continuous dataset, only included to show attempt
 
 
