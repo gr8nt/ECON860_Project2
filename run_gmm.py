@@ -20,6 +20,8 @@ if not os.path.exists('plots'):
   os.mkdir('plots')
 
 pyplot.scatter(dataset[:,0],dataset[:,1])
+pyplot.xlabel("Trait 1")
+pyplot.ylabel("Trait 2")
 pyplot.savefig("plots/scatterplot.png")
 pyplot.close()
 
@@ -30,6 +32,8 @@ def run_gmm(n, dataset):
   results = machine.predict(dataset)
   centroids = machine.means_
   pyplot.scatter(dataset[:,0],dataset[:,1], c=results)
+  pyplot.xlabel("Trait 1")
+  pyplot.ylabel("Trait 2")
   pyplot.scatter(centroids[:,0], centroids[:, 1], c="red", marker="*", s=300)
   pyplot.savefig("plots/scatterplot_gmm_" + str(n) + ".png")
   pyplot.close()
